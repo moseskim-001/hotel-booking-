@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Room - Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Double Room - Hotel Booking</h1>
+    </header>
+
+    <section id="room-details">
+        <div class="room-card">
+                <img src="https://flatmates-res.cloudinary.com/image/upload/c_fill,dpr_2.0,f_auto,h_360,q_auto,w_640/v1/user_property/dfyubjmxffcti9kpofzg">
+                <h3>double room</h3>
+                <p>Spacious for two. Ideal for couples or business partners.</p>
+                <p class="price">KSH 5000 / night</p>
+
+  <!-- Payment Form -->
+  <form action="payment-double-room.php" method="POST" class="payment-form">
+    <h4>Payment Details</h4>
+
+    <label for="name2">Full Name:</label><br />
+    <input type="text" id="name2" name="name" required><br />
+
+    <label for="phone2">Phone Number:</label><br />
+    <input type="tel" id="phone2" name="phone" required><br />
+
+    <label for="method2">Payment Method:</label><br />
+    <select id="method2" name="payment_method" required>
+      <option value="">--Select--</option>
+      <option value="mpesa">M-PESA</option>
+      <option value="visa">Visa/MasterCard</option>
+      <option value="paypal">PayPal</option>
+    </select><br />
+
+    <button type="submit">Pay Now</button>
+  </form>
+</div>      
+            </form>
+            <br>
+            <a href="index.html"><button>Back to Room Selection</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel Management</p>
+         <p><cite> by moses-kim</cite></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

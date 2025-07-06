@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>confrence Room - Hotel Booking</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>confrence room- Hotel Booking</h1>
+    </header>
+
+    <section id="room-details">
+    
+           <!-- Conference Room -->
+<div class="room-card">
+  <img src="https://www.boisechamber.org/uploads/1/1/1/7/111710579/180416cc-0062_orig.jpg" alt="Conference Room" />
+  <h3>Conference Room</h3>
+  <p>State-of-the-art conference space for meetings and events.</p>
+  <p class="price">KSH 7500 / day</p>
+  <!-- Payment Form -->
+  <form action="payment-confrence.php" method="POST" class="payment-form">
+    <h4>Payment Details</h4>
+    <label for="name3">Full Name:</label><br />
+    <input type="text" id="name3" name="name" required><br />
+
+    <label for="phone3">Phone Number:</label><br />
+    <input type="tel" id="phone3" name="phone" required><br />
+
+    <label for="method3">Payment Method:</label><br />
+    <select id="method3" name="payment_method" required>
+      <option value="">--Select--</option>
+      <option value="mpesa">M-PESA</option>
+      <option value="visa">Visa/MasterCard</option>
+      <option value="paypal">PayPal</option>
+    </select><br />
+
+    <button type="submit">Pay Now</button>
+  </form>
+</div>
+
+            <a href="index.html"><button>Back to Room Selection</button></a>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hotel Management</p>
+         <p><cite>moses-kim</cite></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
